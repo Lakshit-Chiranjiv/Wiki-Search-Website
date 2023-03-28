@@ -3,9 +3,9 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className='text-white/80'>
-      <h1 className='text-4xl font-bold my-4'>Contact Me</h1>
+      <h1 className='text-xl sm:text-2xl md:text-4xl font-bold my-4'>Contact Me</h1>
 
-      <div className='grid grid-cols-2 gap-12 mx-auto w-2/3 my-16 text-center'>
+      <div className='grid grid-cols-1 md:grid-cols-2  gap-12 mx-auto md:w-2/3 my-16 text-center'>
         <a href='https://www.linkedin.com/in/lakshit-chiranjiv-sagar-4b0b15198/' target='_blank' rel='noreferrer' className='bg-blue-700 hover:bg-blue-700/75 text-white font-bold py-4 px-4 rounded'>
           LinkedIn
         </a>
