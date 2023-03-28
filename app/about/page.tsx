@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='text-white/80 text-xl'>
-        <h1 className='text-4xl font-bold my-4'>About Me</h1>
+    <div className='text-white/80 text-base md:text-xl'>
+        <h1 className='text-xl sm:text-2xl md:text-4xl font-bold my-4'>About Me</h1>
         <p>My name is <strong className='font-semibold'>Lakshit Chiranjiv Sagar</strong> and I am a full stack web developer. There are other domains that I have worked on like <strong className='font-semibold'>Machine Learning</strong> , <strong className='font-semibold'>Data Science</strong> and <strong className='font-semibold'> Blockchain Development</strong> etc.</p>
         <br />
         <p>I am currently a student at <strong className='font-semibold'>Kalinga Institute of Industrial Technology</strong> pursuing my Bachelors in Computer Science and Engineering</p>
