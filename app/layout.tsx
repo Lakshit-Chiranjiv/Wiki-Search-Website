@@ -2,7 +2,7 @@ import Navbar from './components/Navbar'
 import './globals.css'
 
 export const metadata = {
-  title: 'Wiki Search App',
+  title: 'Wiki Yard App',
   description: 'Search for any info on Wikipedia',
 }
 
