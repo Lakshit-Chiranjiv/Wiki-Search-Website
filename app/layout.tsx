@@ -15,7 +15,9 @@ export default function RootLayout({
     <html lang="en">
       <body className='bg-slate-500 min-h-screen'>
         <Navbar/>
-        {children}
+        <div className='px-24 py-4'>
+          {children}
+        </div>
       </body>
     </html>
   )
