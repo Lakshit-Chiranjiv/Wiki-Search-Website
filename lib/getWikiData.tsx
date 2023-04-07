@@ -10,7 +10,7 @@ const getWikiData = async (searchTerm: string) => {
         srsearch: searchTerm,
         gsrnamespace: '0',
         gsrlimit: '20',
-        props: 'pageimages|pageterms|extracts',
+        prop: 'pageimages|pageterms|extracts',
         exchars: '200',
         exlimit: 'max',
         explaintext: '1',
