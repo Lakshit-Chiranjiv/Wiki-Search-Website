@@ -7,6 +7,7 @@ const getWikiData = async (searchTerm: string) => {
         format: 'json',
         origin: '*',
         gsrsearch: searchTerm,
+        srsearch: searchTerm,
         gsrnamespace: '0',
         gsrlimit: '20',
         props: 'pageimages|pageterms|extracts',
