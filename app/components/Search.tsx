@@ -16,7 +16,7 @@ export default function Search() {
   }
 
   return (
-    <div className="flex flex-col gap-4 md:flex-row text-sm w-fit items-center">
+    <div className="flex flex-col gap-4 md:flex-row text-sm w-fit items-center font-poppins">
         <input type="text" placeholder="Search Wikipedia" className="rounded p-2 outline-none w-56" onChange={(e) => {
           setSearch(e.target.value)
         }}
