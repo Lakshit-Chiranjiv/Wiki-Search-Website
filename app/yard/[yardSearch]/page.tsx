@@ -30,7 +30,6 @@ export default async function YardSearch({ params: { yardSearch } }: Props) {
   const results: Result[] | undefined = wikiDataJson?.query?.pages
   if(!results) return <p>No results found</p>
   const resultsArray = Object.values(results)
-  console.log(resultsArray,"results")
 
   return (
     <div>
