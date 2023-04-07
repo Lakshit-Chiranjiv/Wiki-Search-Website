@@ -5,7 +5,10 @@ const nextConfig = {
   },
   images: {
     domains: ['upload.wikimedia.org'],
-  }
+  },
+  fontLoaders: [
+    { loader: "@next/font/google", options: { subsets: ["latin"] } },
+  ],
 }
 
 module.exports = nextConfig
