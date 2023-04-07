@@ -12,7 +12,7 @@ export async function generateMetaData({ params: { yardSearch } }: Props) {
   const wikiData: Promise<SearchResult> = getWikiData(yardSearch)
   const wikiDataJson = await wikiData
 
-  const displayTerm = yardSearch.replace('%20', ' ')
+  const displayTerm = yardSearch.replaceAll('%20', ' ')
 
   if(!wikiDataJson?.query?.pages) return { title: `${displayTerm} not found` }
 
