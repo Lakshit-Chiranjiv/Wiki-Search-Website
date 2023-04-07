@@ -1,5 +1,6 @@
 import React from 'react'
 import getWikiData from '@/lib/getWikiData'
+import SearchItem from './components/SearchItem'
 
 type Props = {
   params: {
@@ -29,17 +30,14 @@ export default async function YardSearch({ params: { yardSearch } }: Props) {
   const results: Result[] | undefined = wikiDataJson?.query?.pages
   if(!results) return <p>No results found</p>
   const resultsArray = Object.values(results)
-  console.log(results,"results")
+  console.log(resultsArray,"results")
 
   return (
     <div>
       {
         resultsArray.map((result: Result) => {
           return (
-            <div key={result.pageid}>
-              <h1>{result.title}</h1>
-              <p>{result.extract}</p>
-            </div>
+            <SearchItem key={result.pageid} result={result} />
           )
         })
       }
