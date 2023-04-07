@@ -1,6 +1,7 @@
 import React from 'react'
 import getWikiData from '@/lib/getWikiData'
 import SearchItem from './components/SearchItem'
+import { Metadata } from 'next'
 
 type Props = {
   params: {
@@ -8,7 +9,7 @@ type Props = {
   }
 }
 
-export async function generateMetaData({ params: { yardSearch } }: Props) {
+export async function generateMetaData({ params: { yardSearch } }: Props): Promise<Metadata> {
   const wikiData: Promise<SearchResult> = getWikiData(yardSearch)
   const wikiDataJson = await wikiData
 
