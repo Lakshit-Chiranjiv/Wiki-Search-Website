@@ -11,7 +11,7 @@ const SearchItem = ({ result }: Props) => {
   const itemTextPart = (
     <div className="flex flex-col justify-center">
         <h2>
-            <Link href={`https://en.wikipedia.org/?curid=${result.pageid}`} target='_blank' className='text-2xl font-bold'>{result.title}</Link>
+            <Link href={`https://en.wikipedia.org/?curid=${result.pageid}`} target='_blank' className='text-2xl font-bold text-white/80'>{result.title}</Link>
         </h2>
         <p>{result.extract}</p>
     </div>
