@@ -28,11 +28,11 @@ export default async function YardSearch({ params: { yardSearch } }: Props) {
   const wikiData: Promise<SearchResult> = getWikiData(yardSearch)
   const wikiDataJson = await wikiData
   const results: Result[] | undefined = wikiDataJson?.query?.pages
-  if(!results) return <p>No results found</p>
+  if(!results) return <p className='font-poppins'>No results found</p>
   const resultsArray = Object.values(results)
 
   return (
-    <div>
+    <div className='font-poppins'>
       {
         resultsArray.map((result: Result) => {
           return (
