@@ -11,11 +11,10 @@ type Props = {
 export async function generateMetaData({ params: { yardSearch } }: Props) {
   const wikiData: Promise<SearchResult> = getWikiData(yardSearch)
   const wikiDataJson = await wikiData
-  const results: Result[] | undefined = wikiDataJson?.query?.pages
 
   const displayTerm = yardSearch.replace('%20', ' ')
 
-  if(!results) return { title: `${displayTerm} not found` }
+  if(!wikiDataJson?.query?.pages) return { title: `${displayTerm} not found` }
 
   return {
     title: `${displayTerm} - Yard Search`,
