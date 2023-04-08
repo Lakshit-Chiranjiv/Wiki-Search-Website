@@ -9,7 +9,7 @@ type Props = {
   }
 }
 
-export async function generateMetaData({ params: { yardSearch } }: Props): Promise<Metadata> {
+export async function generateMetadata({ params: { yardSearch } }: Props): Promise<Metadata> {
   const wikiData: Promise<SearchResult> = getWikiData(yardSearch)
   const wikiDataJson = await wikiData
 
